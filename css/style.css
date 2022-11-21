@@ -7,6 +7,7 @@ root{
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -73,4 +74,17 @@ nav a:hover{
 
     width: 230px;
     height: 500px;
+}
+
+.banner-right {
+    margin-left: 120px;
+    margin-top: 0;
+}
+
+.banner-right h1 {
+    font-size: 60px;
+}
+
+.banner-right b {
+    color: #5099d9;
 }
