@@ -83,8 +83,36 @@ nav a:hover{
 
 .banner-right h1 {
     font-size: 60px;
+    margin: 0;
+    padding-top: 70px;
 }
 
 .banner-right b {
     color: #5099d9;
 }
+.buttons-social-media{
+    margin-top: 4em;
+}
+.buttons-social-media i {
+    color: #ffffff;
+    margin-right: 8px;
+}
+.buttons-social-media a {
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.social-media-linkedin {
+    background-color: #0e76a8;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.social-media-github {
+    background-color: #000000;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+
+
