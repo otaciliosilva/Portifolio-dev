@@ -2,18 +2,25 @@
 
 root{
     --bg-color-font: #061e33;
+    --color-fontwite: #ffffff;
+    --bg-color-fontprofile: #0e76a8;
 }
 
 body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 header{
     display: flex;
     justify-content: center;
     height: 70px;
+}
+
+.header h1, span {
+    color: #FFFFFF;
 }
 
 .container{
@@ -62,12 +69,22 @@ nav a:hover{
 /* banner css */
 
 .banner {
-
     display: flex;
     justify-content: center;
+    margin: -10px;
+}
 
-    height: 500px;
-
+.fundo {
+    border-bottom: 500px solid #061e33; 
+    border-left: 320px solid transparent; 
+    border-right: 0px solid transparent; 
+    height: 0px; 
+    width: 1000px; 
+}
+.fundo {
+    position: absolute;
+    z-index: -1;
+    margin-left: 600px;
 }
 
 .banner-left img {
@@ -81,10 +98,18 @@ nav a:hover{
     margin-top: 0;
 }
 
+.banner-right{
+    margin-left: 250px;
+}
+
 .banner-right h1 {
     font-size: 60px;
     margin: 0;
     padding-top: 70px;
+}
+
+.banner-right span {
+    font-size: 24px;
 }
 
 .banner-right b {
@@ -108,11 +133,43 @@ nav a:hover{
     color: #ffffff;
     margin-right: 10px;
 }
+.social-media-linkedin:hover{
+    background-color: #ebf7fd;
+    border-radius: 8px;
+    color: #0e76a8;
+    margin-right: 10px;
+}
+.social-media-linkedin:hover i{
+   color: #0e76a8;
+}
+
+
+
 .social-media-github {
     background-color: #000000;
     border-radius: 8px;
     color: #ffffff;
 }
+.social-media-github:hover {
+    background-color: #fafafa;
+    border: solid 0.03px #e4e4e4;
+    border-radius: 8px;
+    color: #000000;
+}
+.social-media-github:hover i{
+    color: #000000;
+}
 
+/* css profile */
+.profile {
+    background-color: var(--bg-color-fontprofile);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
 
+.profile h3 {
+    font-size: 32px;
+    font-weight: 400;
+}
 
