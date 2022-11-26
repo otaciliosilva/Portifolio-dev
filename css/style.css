@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-root{
-    --bg-color-font: #061e33;
-    --color-fontwite: #ffffff;
-    --bg-color-fontprofile: #0e76a8;
+:root{
+    --fontColorTitle: #ffffff;
+    --background-bannerright: #061e33;
+    --colorText-secundary: #5099d9;
+    --linkedin-hover: #ebf7fd;
+    --black-color: #000000;
+    --white-color: #ffffff;
 }
 
 body{
@@ -20,7 +23,7 @@ header{
 }
 
 .header h1, span {
-    color: #FFFFFF;
+    color: var(--fontColorTitle);
 }
 
 .container{
@@ -62,8 +65,8 @@ nav a {
 }
 
 nav a:hover{
-    background-color: #061e33;
-    color: #ffffff;
+    background-color: var(--background-bannerright);
+    color: var(--fontColorTitle);
 }
 
 /* banner css */
@@ -75,7 +78,7 @@ nav a:hover{
 }
 
 .fundo {
-    border-bottom: 500px solid #061e33; 
+    border-bottom: 500px solid var(--background-bannerright); 
     border-left: 320px solid transparent; 
     border-right: 0px solid transparent; 
     height: 0px; 
@@ -99,9 +102,6 @@ nav a:hover{
     margin-top: 0;
 }
 
-.banner-right{
-}
-
 .banner-right h1 {
     font-size: 60px;
     margin: 0;
@@ -113,13 +113,12 @@ nav a:hover{
 }
 
 .banner-right b {
-    color: #5099d9;
+    color: var(--colorText-secundary);
 }
-.buttons-social-media{
-    margin-top: 4em;
-}
+
 .buttons-social-media i {
-    color: #ffffff;
+    margin-top: 4em;
+    color: var(--fontColorTitle);
     margin-right: 8px;
 }
 .buttons-social-media a {
@@ -128,41 +127,39 @@ nav a:hover{
 }
 
 .social-media-linkedin {
-    background-color: #0e76a8;
+    background-color: var(--colorText-secundary);
     border-radius: 8px;
-    color: #ffffff;
+    color: var(--fontColorTitle);
     margin-right: 10px;
 }
 .social-media-linkedin:hover{
-    background-color: #ebf7fd;
+    background-color: var(--linkedin-hover);
     border-radius: 8px;
-    color: #0e76a8;
+    color: var(--colorText-secundary);
     margin-right: 10px;
 }
 .social-media-linkedin:hover i{
-   color: #0e76a8;
+   color: var(--colorText-secundary);
 }
 
 
 
 .social-media-github {
-    background-color: #000000;
+    background-color: var(--black-color);
     border-radius: 8px;
-    color: #ffffff;
+    color: var(--white-color);
 }
 .social-media-github:hover {
-    background-color: #fafafa;
-    border: solid 0.03px #e4e4e4;
+    background-color: var(--white-color);
     border-radius: 8px;
-    color: #000000;
+    color: var(--black-color);
 }
 .social-media-github:hover i{
-    color: #000000;
+    color: var(--black-color);
 }
 
 /* css profile */
 .profile {
-    background-color: var(--bg-color-fontprofile);
     height: 200px;
     display: flex;
     justify-content: center;
